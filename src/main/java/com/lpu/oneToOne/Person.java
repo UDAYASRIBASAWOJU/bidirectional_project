@@ -2,6 +2,7 @@ package com.lpu.oneToOne;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToOne;
 
 @Entity
@@ -12,6 +13,7 @@ public class Person {
 	
 	private String name;
 	
+	@JoinColumn
 	@OneToOne
 	private Aadhar aadhar;
 	

@@ -12,7 +12,7 @@ public class Aadhar {
 	
 	private String location;
 	
-	@OneToOne
+	@OneToOne(mappedBy = "aadhar")
 	private Person person;
 
 	public Aadhar() {
