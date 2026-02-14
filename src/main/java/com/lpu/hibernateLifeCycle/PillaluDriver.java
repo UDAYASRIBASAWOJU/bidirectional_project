@@ -18,9 +18,9 @@ public class PillaluDriver {
 
 		et.begin();
 		//em.persist(p);  //Persistent
-		em.detach(p);
-		//em.merge(p);
-		em.remove(p);   //remove called after detach, so wont work
+		em.detach(p);     //Detach
+		//em.merge(p);    //Persistent
+		em.remove(p);     //remove called after detach, so wont work
 		et.commit();
 	}
 }
